@@ -2,12 +2,12 @@
 
 Custom MCP servers built on Cloudflare Workers, designed to give LLMs the persistent memory and external capabilities they don't have natively.
 
-## The servers
+## The MCP servers
 
-| Server | What it does | Repo |
+| MCP Server | What it does | Repo |
 |--------|-------------|------|
-| **Second Brain Vault** | Read/write access to a personal document vault backed by Cloudflare R2. File operations, search, directory browsing, presigned URLs for binary transfers. | [mcp-second-brain-R2](https://github.com/token-brain/mcp-second-brain-R2) |
-| **GitHub Issues** | Full GitHub Issues management (issues, labels, milestones, comments) scoped to authorized repositories. Uses the OAuth token from authentication; no separate PAT needed. | [mcp-github-issues](https://github.com/token-brain/mcp-github-issues) |
+| **Second Brain Vault MCP** | Read/write access to a personal document vault backed by Cloudflare R2. File operations, search, directory browsing, presigned URLs for binary transfers. | [mcp-second-brain-R2](https://github.com/token-brain/mcp-second-brain-R2) |
+| **GitHub Issues MCP** | Full GitHub Issues management (issues, labels, milestones, comments) scoped to authorized repositories. Uses the OAuth token from authentication; no separate PAT needed. | [mcp-github-issues](https://github.com/token-brain/mcp-github-issues) |
 
 Both servers connect directly to Claude.ai and Claude Desktop via remote MCP (HTTPS transport) with GitHub OAuth authentication handled by Cloudflare's `workers-oauth-provider`.
 
